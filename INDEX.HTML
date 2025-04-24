@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VS SHOP | Billetera Antirobo RFID</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0c11;
+      color: #fff;
+      line-height: 1.5;
+    }
+
+    header {
+      background: #1a1a1a;
+      padding: 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      color: #00ffcc;
+      font-size: 1.8rem;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1610484826967-cd86cd1dbdb5?auto=format&fit=crop&w=900') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 15px;
+    }
+
+    .hero h2 {
+      font-size: 1.6rem;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 8px;
+    }
+
+    .hero p {
+      font-size: 1rem;
+      max-width: 90%;
+      background: rgba(0, 0, 0, 0.5);
+      margin-top: 8px;
+      padding: 8px;
+      border-radius: 8px;
+    }
+
+    .section {
+      padding: 30px 15px;
+      text-align: center;
+    }
+
+    .section h3 {
+      color: #00ffcc;
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin: auto;
+      border-radius: 10px;
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .carousel {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 10px 0;
+    }
+    .carousel img {
+  width: 250px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  scroll-snap-align: center;
+  transition: transform 0.3s;
+  margin: 0 auto; /* Esto la centra */
+}
+
+
+
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
+
+    .benefits {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+
+    .benefits div {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #00ffcc44;
+    }
+
+    .cta {
+      background: #00ffcc;
+      color: #000;
+      padding: 25px 15px;
+      text-align: center;
+    }
+
+    .cta h3 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+
+    .cta p {
+      font-size: 1rem;
+    }
+
+    .cta button {
+      margin-top: 10px;
+      background: #000;
+      color: #00ffcc;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .cta button:hover {
+      background: #00ccaa;
+      color: #000;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 12px;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    ::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #00ffcc;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+
+    @media (min-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+      }
+      .benefits {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>VS SHOP</h1>
+  </header>
+
+  <section class="hero">
+    <h2>Billetera Antirobo de Fibra de Carbono</h2>
+    <p>Diseño compacto, tecnología RFID, estilo moderno. ¡Protege lo que más importa!</p>
+  </section>
+
+  <section class="section">
+    <h3>Descúbrela en acción</h3>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/glkHUSR0OE0?autoplay=1&mute=1&playsinline=1&controls=1&rel=0" 
+        title="Video billetera RFID" 
+        allow="autoplay; encrypted-media; picture-in-picture" 
+        allowfullscreen
+      ></iframe>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Galería de imágenes</h3>
+    <div class="carousel">
+      <img src="White and Brown Stylish Appliances Product Features Instagram Post.png" alt="Vista frontal" />
+      <!-- Puedes agregar más imágenes si querés -->
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Beneficios que marcan la diferencia</h3>
+    <div class="benefits">
+      <div>
+        <strong>🔒 Tecnología RFID</strong>
+        <p>Protección total contra robos digitales.</p>
+      </div>
+      <div>
+        <strong>📦 Compacta & Resistente</strong>
+        <p>Ideal para tu bolsillo y resistente al uso diario.</p>
+      </div>
+      <div>
+        <strong>💳 Capacidad Inteligente</strong>
+        <p>Guarda hasta 10 tarjetas y billetes con clip metálico.</p>
+      </div>
+      <div>
+        <strong>🔥 Estilo Minimalista</strong>
+        <p>Diseño premium que combina con todo.</p>A
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h3>¡Llévatela ahora por solo ₲130.000!</h3>
+    <p>SOLICITA TU DESCUENTO HAS 30% OFF</p>
+    <button onclick="window.location.href='https://wa.me/595992514642?text=Hola%20quiero%20comprar%20la%20billetera%20RFID%20de%20fibra%20de%20carbono'">Comprar por WhatsApp</button>
+  </section>
+
+  <footer>
+    &copy; 2025 VS SHOP. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
